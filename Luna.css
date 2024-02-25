@@ -1,0 +1,558 @@
+body {
+    max-height:max-content;
+    max-width: 2300px;
+    margin: 0;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    background-color :rgb(228, 237, 255);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.heading {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0%;
+    background-image: url('images/Earth/earthfromabove.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    position: relative;
+}
+
+.name {
+    margin-bottom: 15px;
+}
+
+.subtext {
+    font-size: 15px;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    height: 175px;
+    width: 175px;
+}
+
+a:link { text-decoration: none; }
+
+.buttons{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.Sun {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Sun/sun.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative; /*ALWAYS ADD THIS WHEN DOING THE HOVER ANIMATION*/
+} 
+
+.Sun::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Sun:hover::after {
+    transform: scaleX(1);
+}
+
+.Mercury {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Mercury/mercury.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+}
+
+.Mercury::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Mercury:hover::after {
+    transform: scaleX(1);
+}
+
+.Venus {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Venus/venus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Venus::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Venus:hover::after {
+    transform: scaleX(1);
+}
+
+.Earth {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Earth/earth-from-bottom.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Earth::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Earth:hover::after {
+    transform: scaleX(1);
+}
+
+.Luna {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Moon/moon-in-color.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Luna::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Luna:hover::after {
+    transform: scaleX(1);
+}
+
+.Mars {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Mars/mars.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Mars::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Mars:hover::after {
+    transform: scaleX(1);
+}
+
+.Jupiter {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Jupiter/jupiter-in-detail.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Jupiter::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Jupiter:hover::after {
+    transform: scaleX(1);
+}
+
+.Saturn {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Saturn/saturn-from-side.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Saturn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Saturn:hover::after {
+    transform: scaleX(1);
+}
+
+.Uranus {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Uranus/uranus.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Uranus::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Uranus:hover::after {
+    transform: scaleX(1);
+}
+
+.Neptune {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Neptune/neptune-from-side.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Neptune::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Neptune:hover::after {
+    transform: scaleX(1);
+}
+
+.Pluto {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Pluto/pluto-in-color.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    position: relative;
+} 
+
+.Pluto::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Pluto:hover::after {
+    transform: scaleX(1);
+}
+
+.Belt {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    background-image: url('images/Belt/67P.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: larger;
+    margin-bottom: 10px;
+    position: relative;
+} 
+
+.Belt::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.Belt:hover::after {
+    transform: scaleX(1);
+}
+
+.bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: slategray;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+}
+
+/*.test {
+    margin-top: 10px;
+    width: 330px;
+    height: 330px;
+    text-align: center;
+    background-image: url('images/Mars/close-up-of-valles-marineris.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    cursor: pointer;
+    font-size: larger;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.test::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 36px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.35s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.test:hover::after {
+    transform: scaleX(1);
+}

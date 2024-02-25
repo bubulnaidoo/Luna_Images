@@ -1,0 +1,132 @@
+body {
+    max-height: fit-content;
+    max-width: 3300px;
+    margin: 0;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    background-color :rgb(228, 237, 255);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-decoration: none;
+}
+
+.heading {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../images/Uranus/uranus-webb.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.description {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#more {
+    display: none;
+}
+
+.description-button {
+    background-color: slategray;
+    border-radius: 16px;
+    border: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-size: 40px;
+    position: relative;
+}
+
+.description-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-out;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.description-button:hover::after {
+    transform: scaleX(1);
+}
+
+.images {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.one {
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.two {
+    margin-top: 10px;
+    width: 610px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    border: none;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.home {
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    background-color: slategray;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-size: 25px;
+    position: relative;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f9b412;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-out;
+}
+
+.home:hover::after {
+    transform: scaleX(1);
+}
